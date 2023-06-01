@@ -1,0 +1,67 @@
+* {
+    font-family: 'Raleway', sans-serif;
+    font-size: medium;
+}
+
+body {
+    margin: 0;
+    background-color: #eee;
+}
+
+.header {
+    background-color: rgb(63, 131, 93);
+    color: aliceblue;
+    padding: 10px;
+    text-align: center;
+}
+
+header h2 {
+    font-size: 4rem;
+    text-align: center;
+}
+
+
+.footer {
+    background-color: rgb(63, 131, 93);
+    color: aliceblue;
+    padding: 25px;
+    text-align: center;
+    margin-top: 30px;
+}              
+
+.titulo {
+    text-shadow: 2px 4px 4px gray;
+    color: rgb(255, 255, 255);
+    font-size: xx-large;
+}
+
+table {
+    width: 100%;
+    
+}
+
+th, td {
+    border: solid 1px #eee;
+    padding: 5px;
+}
+
+th {
+    background-color: tomato;
+    color: white;
+    text-align: center;
+}
+
+tr:nth-child(even) {
+    background-color: #eee;
+}
+
+tr:hover {
+    background-color: #aaa;
+    cursor: pointer;
+}
+
+/* .inline-block {
+    display: inline-block;
+
+    no se le puede agregar la propiedad de width ni hight
+} */

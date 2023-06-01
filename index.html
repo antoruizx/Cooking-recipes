@@ -1,24 +1,31 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>My cooking blog</title>
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">
 </head>
+
 <body>
-    <header>
-        <h1>RECETAS DE COCINA</h1>
+    <header class="header">
+        <h1 class="titulo">RECETAS DE COCINA</h1>
+        <!-- <h2 class="centrado">
+            ¡Bienvenidos a nuestra página de recetas!
+        </h2> -->
     </header>
-    <main>
-        <h2>
-            Bienvenidos a nuestra página de recetas
-        </h2>
-        <h2>RECETAS</h2>
-        <h3>Milanesa vegetariana de garbanzos</h3>
-        <img src="https://cocinacriolla.com.ar/wp-content/uploads/2021/12/MILANESAS-VEGANAS-DE-POROTOS.jpg" alt="milanesa vegetariana">
+
+    <body>
+        <h2>PLATOS VEGETARIANOS</h2>
+        <h3>Milanesa de garbanzos</h3>
+        <img src="https://cocinacriolla.com.ar/wp-content/uploads/2021/12/MILANESAS-VEGANAS-DE-POROTOS.jpg" width="400"
+            alt="milanesa vegetariana">
         <p>
-            Las Milanesas de Garbanzos son súper fáciles de preparar para un almuerzo o cena rápidos y ligeros. Son una forma diferente y creativa de disfrutar de los garbanzos y son ideales para quienes siguen una dieta vegetariana.
+            Las Milanesas de Garbanzos son súper fáciles de preparar para un almuerzo o cena rápidos y ligeros. Son una
+            forma diferente y creativa de disfrutar de los garbanzos y son ideales para quienes siguen una dieta
+            vegetariana.
         </p>
 
         <h3>Ingredientes:</h3>
@@ -43,16 +50,112 @@
         </ol>
 
         <form>
-            <label>Comentarios:</label>
+            <label>¿Qué te parecieron las recetas?</label>
             <input type="textarea" row="5">
         </form>
 
+        <hr>
+
         <table>
-            <thead>
-                <td></td>
-            </thead>
+                <tr>
+                    <th><strong>Posición</strong></td>
+                    <th><strong>Nombre el plato</strong></td>
+                    <th><strong>Puntaje</strong></td>
+                </tr>
+
+                <tr>
+                    <td>1</td>
+                    <td>Milanesa de garbanzos</td>
+                    <td>9</td>
+                </tr>
+
+                <tr>
+                    <td>2</td>
+                    <td>Milanesa de lentejas</td>
+                    <td>10</td>
+                </tr>
+
+                <tr>
+                    <td>3</td>
+                    <td>Milanesa de soja texturizada</td>
+                    <td>8.5</td>
+                </tr>
+
+                <tr>
+                    <td>4</td>
+                    <td>Milanesa de berenjena</td>
+                    <td>9,5</td>
+                </tr>
+
+                <tr>
+                    <td>5</td>
+                    <td>Nuggets de soja texturizada</td>
+                    <td>9</td>
+                </tr>
+
+                <tr>
+                    <td>6</td>
+                    <td>Salchichas parrilleras de legumbres</td>
+                    <td>9,5</td>
+                </tr>
+
+                <tr>
+                    <td>7</td>
+                    <td>Queso de papa</td>
+                    <td>8</td>
+                </tr>
+
+                <tr>
+                    <td>8</td>
+                    <td>Queso de semillas de girasol</td>
+                    <td>10</td>
+                </tr>
+
+                <tr>
+                    <td>9</td>
+                    <td>Sorrentinos de calabaza, roquefort y nueces</td>
+                    <td>10</td>
+                </tr>
+
+                <tr>
+                    <td>10</td>
+                    <td>Tortelli de de ricota y espinaca</td>
+                    <td>9</td>
+                </tr>
         </table>
-     </main>
-    
+
+        <hr>
+
+        <form action="formulario" method="POST">
+            <p>
+                <label for="nombre">Nombre</label>
+                <input type="text" id="nombre" name="nombre">
+            </p>
+            <p>
+                <label for="apellido">Apellido</label>
+                <input type="text" id="apellido" name="apellido">
+            </p>
+            <p>
+                <label for="email">Correo electrónico</label>
+                <input type="email" id="email" name="email">
+            </p>
+            <label for="comentario">Comentarios</label>
+            <br>
+            <textarea cols="40" rows="10" id="comentario" placeholder="Ingrese comentario" name="comentario"></textarea>
+            <br>
+            <input type="submit" id="submit" name="submit">
+            <button type="button">Tipo botón</button>
+            <button type="reset">Tipo reset</button>
+            <button type="submit">Tipo submit</button>
+        </form>
+    </body>
+
+    <footer class="footer">
+        © Copyright 2023 - Creado por Nadia Antonella Ruiz
+    </footer>
+
+    <!-- comments -->
+
 </body>
+
 </html>
