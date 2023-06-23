@@ -63,10 +63,19 @@ tr:hover {
     cursor: pointer;
 }
 
+.btnvm {
+    margin: 28px;
+}
+
+.row {
+    margin: 10px;
+}
 
 .slide img {
     height: 80vh;
 }
+
+
 
 /* .inline-block {
     display: inline-block;
