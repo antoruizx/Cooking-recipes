@@ -75,7 +75,15 @@ tr:hover {
     height: 80vh;
 }
 
+.titulo-principal {
+    margin: 20px;
+    justify-content: center;
+    align-items: center;
+}
 
+.caja-titulo {
+    align-items: center;
+}
 
 /* .inline-block {
     display: inline-block;
